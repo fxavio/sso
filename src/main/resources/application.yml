@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: ${CLIENT_ID}
+            clientSecret: ${CLIENT_SECRET}
+            scope:
+#              -openid # request openid
+#              - email   # request email address
+#              - profile # request user profile
+
+
+server:
+  port: ${PORT}
+
